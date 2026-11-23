@@ -36,11 +36,11 @@ Q3
 bic21203-lab4a-javascript/
 ├── README.md
 ├── q1/
-│   ├── index.html
-│   └── script.js
+│   ├── q1_index.html
+│   └── q1_script.js
 ├── q2/
-│   ├── index.html
-│   └── script.js
+│   ├── q2_index.html
+│   └── q2_script.js
 └── q3/
-    ├── index.html
-    └── script.js
+    ├── q3_index.html
+    └── q3_script.js
