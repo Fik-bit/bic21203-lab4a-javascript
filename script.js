@@ -1,26 +1,20 @@
-const userInput = document.getElementById("userInput");
-const checkBtn = document.getElementById("checkBtn");
-const resultEl = document.getElementById("result");
+const generateBtn = document.getElementById("generateBtn");
+const numberList = document.getElementById("numberList");
 
-function checkInput() {
-  if (!userInput || !resultEl) {
+function generateNumbers() {
+  if (!numberList) {
     return;
   }
 
-  const rawValue = userInput.value.trim();
-  const num = Number(rawValue);
+  numberList.textContent = "";
 
-  if (rawValue === "" || Number.isNaN(num) || !Number.isFinite(num)) {
-    resultEl.textContent = "Please enter a valid number!";
-  } else if (num < 10) {
-    resultEl.textContent = "The number is lower than 10";
-  } else if (num > 10) {
-    resultEl.textContent = "The number is higher than 10";
-  } else {
-    resultEl.textContent = "The number is equal to 10";
+  for (let i = 1; i <= 5; i++) {
+    const li = document.createElement("li");
+    li.textContent = `The number is ${i}`;
+    numberList.appendChild(li);
   }
 }
 
-if (checkBtn) {
-  checkBtn.addEventListener("click", checkInput);
+if (generateBtn) {
+  generateBtn.addEventListener("click", generateNumbers);
 }
