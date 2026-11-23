@@ -1,12 +1,26 @@
-const messageEl = document.getElementById("message");
-const changeBtn = document.getElementById("changeBtn");
+const userInput = document.getElementById("userInput");
+const checkBtn = document.getElementById("checkBtn");
+const resultEl = document.getElementById("result");
 
-function changeMessage() {
-  if (messageEl) {
-    messageEl.textContent = "Hello there!";
+function checkInput() {
+  if (!userInput || !resultEl) {
+    return;
+  }
+
+  const rawValue = userInput.value.trim();
+  const num = Number(rawValue);
+
+  if (rawValue === "" || Number.isNaN(num) || !Number.isFinite(num)) {
+    resultEl.textContent = "Please enter a valid number!";
+  } else if (num < 10) {
+    resultEl.textContent = "The number is lower than 10";
+  } else if (num > 10) {
+    resultEl.textContent = "The number is higher than 10";
+  } else {
+    resultEl.textContent = "The number is equal to 10";
   }
 }
 
-if (changeBtn) {
-  changeBtn.addEventListener("click", changeMessage);
+if (checkBtn) {
+  checkBtn.addEventListener("click", checkInput);
 }
