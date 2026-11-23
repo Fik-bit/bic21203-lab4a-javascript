@@ -17,6 +17,19 @@ This repository contains solutions for **Lab #4a: Client-Side Scripting (JavaScr
 
 ---
 
+## Project Overview
+Q1
+<img width="300" height="176" alt="image" src="https://github.com/user-attachments/assets/85904d0f-0e4a-4248-90df-05d755b175df" />
+<img width="312" height="192" alt="image" src="https://github.com/user-attachments/assets/acca316b-e942-4d27-9490-25ab34ba4106" />
+
+Q2
+<img width="381" height="477" alt="image" src="https://github.com/user-attachments/assets/5e48404c-e3a2-4996-9777-5261122dfac9" />
+<img width="383" height="97" alt="image" src="https://github.com/user-attachments/assets/0e135047-413d-45f5-a0e2-ac1298c87ac3" />
+
+Q3
+<img width="372" height="217" alt="image" src="https://github.com/user-attachments/assets/b6ee9d7a-a804-41b8-9cf9-31b803d5a4cb" />
+
+
 ## Project Structure
 
 ```text
